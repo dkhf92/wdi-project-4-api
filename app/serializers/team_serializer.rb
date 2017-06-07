@@ -6,6 +6,7 @@ class TeamSerializer < ActiveModel::Serializer
   # belongs_to :users
   # has_many :through, :users
   has_many :users
+  has_many :requests
 end
 
 # rails g migration AddTeamToUser team:references ?
