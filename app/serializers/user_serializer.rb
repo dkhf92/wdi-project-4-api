@@ -1,5 +1,6 @@
 class UserSerializer < ActiveModel::Serializer
   has_one :team
+  has_many :created_teams
   attributes :id, :username, :full_name
   # has_many :teams
   # has_many_and_belongs_to_many :teams_id

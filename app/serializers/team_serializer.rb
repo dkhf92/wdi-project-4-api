@@ -3,4 +3,5 @@ class TeamSerializer < ActiveModel::Serializer
 
   has_many :users
   has_many :requests
+  has_one :creator
 end
