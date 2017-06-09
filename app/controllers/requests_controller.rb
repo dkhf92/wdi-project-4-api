@@ -13,7 +13,7 @@ class RequestsController < ApplicationController
 
   def accept
     @request.status = 'accepted'
-
+    @request.team.users << @request.user
     if @request.save
       render json: @request, status: :created
     else
